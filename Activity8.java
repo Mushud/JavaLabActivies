@@ -3,6 +3,7 @@ import java.awt.Dimension;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 /**
  * Activity8
@@ -17,10 +18,14 @@ public class Activity8 {
         JLabel label = new JLabel("Welcome, This is label");
         label.setBounds(30, 10, 400, 10);
 
-        JButton button = new JButton("Hello");
-        button.setBounds(30, 30, 100, 40);
+        JTextField textField = new JTextField("Type here");
+        textField.setBounds(30, 50, 250, 20);
+
+        JButton button = new JButton("Button");
+        button.setBounds(30, 100, 100, 40);
        
         frame.add(label);
+        frame.add(textField);
         frame.add(button);
         frame.setLayout(null);
         frame.setVisible(true);
