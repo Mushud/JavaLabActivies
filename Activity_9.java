@@ -3,13 +3,13 @@ import java.awt.*;
 import java.awt.Color;
 import java.awt.event.*;
 
-public class JDemoCreateGraphicsObject extends JFrame implements ActionListener {
+public class Activity_9 extends JFrame implements ActionListener {
     String movingQuote = new String("Hello Graphics");
     JButton moveButton = new JButton("Click Me!");
     int x= 10, y=50;
     final int gap=20, size=400;
 
-    public JDemoCreateGraphicsObject()
+    public Activity_9()
     {
         Container con = getContentPane();
         con.setBackground(Color.BLACK
@@ -28,7 +28,7 @@ public class JDemoCreateGraphicsObject extends JFrame implements ActionListener 
     }
     public static void main (String args[])
     {
-        JDemoCreateGraphicsObject dexoangle= new JDemoCreateGraphicsObject();
+        Activity_9 dexoangle= new Activity_9();
         dexoangle.setVisible(true);
         dexoangle.setSize(800,600);
         dexoangle.setResizable(false);
