@@ -12,8 +12,11 @@ public class Activity4 {
     }
 
     public static void bubbleSort(int[] list){
+
+      //  boolean needPass = true;
         for (int i = 1; i < list.length; i++) {
-            for (int k = 0; k < list.length; k++) {
+          //  needPass = false;
+            for (int k = 0; k < list.length-1; k++) {
                 if(list[k] > list[i]){
                     int temp = list[k];
                     list[k] = list[i];
